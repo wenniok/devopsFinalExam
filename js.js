@@ -112,7 +112,7 @@ var moves = 0,
         player: 0,
         computer: 0
     },
-    xText = "<span class=\"x\">&times;</class>",
+    xText = "<span class=\"x\">x</class>",
     oText = "<span class=\"o\">o</class>",
     playerText = xText,
     computerText = oText,
@@ -332,7 +332,7 @@ function cellClicked(id) {
         return false;
     }
     moves += 1;
-    document.getElementById(id).innerHTML = "playerText";
+    document.getElementById(id).innerHTML = playerText;
     // randomize orientation (for looks only)
     var rand = Math.random();
     if (rand < 0.3) {
